@@ -169,10 +169,10 @@ export default function Home() {
                       My name is Thuy Trang, a student at FPT University majoring in Front-End Development with 1 year of experience.
                     </p>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                      Career Objective: I aim to become a skilled front-end developer, creating modern and user-friendly web interfaces.
+                       I aim to become a skilled front-end developer, creating modern and user-friendly web interfaces.
                     </p>
                     <p className="text-lg text-gray-300">
-                     Future Plan: In the next few years, I plan to improve my full-stack skills and work in a professional, dynamic tech environment.
+                     In the next few years, I plan to improve my full-stack skills and work in a professional, dynamic tech environment.
                     </p>
                   </div>
                 </div>
