@@ -166,13 +166,13 @@ export default function Home() {
                   <h3 className="text-3xl font-semibold mb-8">About Me</h3>
                   <div className="space-y-4">
                     <p className="text-gray-300 leading-relaxed text-lg">
-                      I&apos;m a passionate Front-End Developer with a keen eye for creating engaging and responsive web experiences.
+                      My name is Thuy Trang, a student at FPT University majoring in Front-End Development with 1 year of experience.
                     </p>
                     <p className="text-gray-300 leading-relaxed text-lg">
-                      My journey in web development has equipped me with a strong foundation in modern technologies and best practices.
+                      Career Objective: I aim to become a skilled front-end developer, creating modern and user-friendly web interfaces.
                     </p>
                     <p className="text-lg text-gray-300">
-                      I specialize in modern web technologies and frameworks, with a particular focus on React and Next.js. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.
+                     Future Plan: In the next few years, I plan to improve my full-stack skills and work in a professional, dynamic tech environment.
                     </p>
                   </div>
                 </div>
