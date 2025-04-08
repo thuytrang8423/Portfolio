@@ -20,7 +20,7 @@ export const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
             <span className="text-xl font-bold text-white">Miru</span>
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500"> //UwU//</span>
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500"> {"//"} UwU {"//"}</span>
             </Link>
           </div>
           <div className="hidden md:block">

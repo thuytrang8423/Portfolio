@@ -1,11 +1,11 @@
-
 import { ContactForm } from "@/components/ui/contact-form";
 import { Navbar } from "@/components/ui/navbar";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { Button } from "@/components/ui/moving-border";
 import Link from "next/link";
-import { PinContainer } from "@/components/ui/3d-pin";
+import Image from "next/image";
+// import { PinContainer } from "@/components/ui/3d-pin";
 
 export default function Home() {
   const words = [
@@ -83,12 +83,15 @@ export default function Home() {
             <div className="w-1/2 flex items-center justify-center relative">
               <div className="relative w-[500px] h-[500px] rounded-full p-2 bg-gradient-to-r from-purple-500/20 via-blue-500/20 to-purple-500/20">
                 <div className="w-full h-full rounded-full overflow-hidden border-2 border-purple-500/20 backdrop-blur-sm">
-                  <img
-                    src="./capy.webp"
-                    alt="Capybara illustration"
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-full" />
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/capy.webp"
+                      alt="Capybara illustration"
+                      fill
+                      className="object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-full" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,21 +181,7 @@ export default function Home() {
                 date: "April 7,2025",
                 image: "/certificate1.png",
                 link: "https://www.freecodecamp.org/certification/LuongThiThuyTrang/responsive-web-design"
-              },
-              {
-                title: "React Advanced Certification",
-                issuer: "Meta",
-                date: "2023",
-                image: "/react-cert.png",
-                link: "#"
-              },
-              {
-                title: "Full Stack Development",
-                issuer: "freeCodeCamp",
-                date: "2022",
-                image: "/fcc-cert.png",
-                link: "#"
-              }
+              }              
             ].map((cert, index) => (
               <div
                 key={index}
@@ -201,11 +190,15 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-transparent to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative z-10">
                   <div className="aspect-[4/3] w-full mb-4 bg-black/30 rounded-lg overflow-hidden">
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                    />
+                    <div className="relative w-full h-full">
+                      <Image
+                        src={cert.image}
+                        alt={cert.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
                   <p className="text-gray-300 mb-1">{cert.issuer}</p>
@@ -243,9 +236,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold mb-4">Let's Connect</h3>
+                <h3 className="text-xl font-semibold mb-4">Let is Connect</h3>
                 <p className="text-gray-300">
-                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                  I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
                 </p>
               </div>
               <div className="space-y-4">
